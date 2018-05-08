@@ -1,0 +1,27 @@
+{
+  "name": "liu-test-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxqsdau/node-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxqsdau/node-cli/issues"
+  },
+  "homepage": "https://github.com/lxqsdau/node-cli#readme",
+  "bin": {
+    "liu-test-cli": "command.js"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "node-cmd": "^3.0.0"
+  }
+}
