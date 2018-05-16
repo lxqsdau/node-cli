@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 console.log('liu-test-cli脚手架');
-const commander = require('commander');
-const cmd = require('node-cmd');
-const download = require('download-git-repo');
+const commander = require('commander'); // 是一个提供用户命令行输入和参数解析的强大功能
+const cmd = require('node-cmd'); // 处理多个命令
+const download = require('download-git-repo'); // 下载git
 
 // Options:
 // 能够初始化自定义的参数对象，设置关键字和描述，同时还可以设置读取用户输入的参数
@@ -53,6 +53,14 @@ commander
         //     }
         // )
     });
+commander
+.command('add')
+.description('Add a new template')
+.alias('a')
+.action(() => {
+    require('./add')()
+})
+
 commander.parse(process.argv); // 执行这个才能有效果
 // 命令liu-test-cli -a || liu-test-cli --aaa
 // 输出 liu-test-cli脚手架 aaa

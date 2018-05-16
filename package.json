@@ -18,11 +18,17 @@
   },
   "homepage": "https://github.com/lxqsdau/node-cli#readme",
   "bin": {
-    "liu-test-cli": "command.js"
+    "liu-test-cli": "command.js",
+    "bai": "create-react.js"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
     "commander": "^2.15.1",
     "download-git-repo": "^1.0.2",
-    "node-cmd": "^3.0.0"
+    "inquirer": "^5.2.0",
+    "node-cmd": "^3.0.0",
+    "thenjs": "^2.1.0"
   }
 }
